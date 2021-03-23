@@ -2,9 +2,7 @@ const { Router } = require('express')
 const router = Router()
 
 router.use('/hello', (req, res) => {
-  res.json({
-    "text" : "Hello world!"
-  })
+  res.end('Hello world!')
 })
 
 module.exports = router
