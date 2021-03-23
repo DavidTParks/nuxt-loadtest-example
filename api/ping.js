@@ -1,8 +1,8 @@
 const { Router } = require('express')
 const router = Router()
 
-router.use('/hello', (req, res) => {
-  res.end('Hello world!')
+router.use('/ping', (req, res) => {
+  res.json('Ping!')
 })
 
 module.exports = router

@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express()
 
-const hello = require('./hello')
-app.use(hello)
+const ping = require('./ping')
+app.use(ping)
 
 if (require.main === module) {
   const port = 3001
